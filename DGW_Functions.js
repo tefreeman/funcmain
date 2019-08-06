@@ -58,6 +58,7 @@ function CallScript (sScript, sMessage, sTarget, sForm)
 	else
 	{
 		oForm = document[sForm];
+		console.log('callscript: ', oform, sform);
 		if (typeof(oForm.REPORT) != "undefined")
 		{
 			oForm.REPORT.value = "";
@@ -558,7 +559,7 @@ function postToUrl(path, params, sTarget)
    form.setAttribute("method", method);
    form.setAttribute("action", path);
    form.setAttribute("target", sTarget);
-
+   console.log('postToUrl:', path, params, sTarget);
    for ( var key in params)
    {
       var hiddenField = document.createElement("input");
