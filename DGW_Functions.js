@@ -31,7 +31,8 @@ with (thisFrame.document)
 //////////////////////////////////////////////////////////////////
 function CallScript (sScript, sMessage, sTarget, sForm)
 {	
-	console.log('fired callScript);
+	console.log('fired callScript');
+	console.log(sScript, sMessage, sTarget, sForm);
 	var oForm;
 	var sControlHTML;
 	if (typeof(sMessage) == "undefined" || sMessage == "")
@@ -547,6 +548,7 @@ function DrawHref(sValue, sHref, sTarget)
 //postToUrl("<$ILENV-DW_URL_STUDENT_PLANNER>/redirect.jsp", { passport: "<$ILCGI-PASSPORT>", destination: "<$ILENV-DW_URL_STUDENT_PLANNER>/secured/secured.zul" } );
 function postToUrl(path, params, sTarget)
 {
+	console.log(path, params, sTarget);
    var method = "POST";
    sTarget = sTarget || "_blank";
 
