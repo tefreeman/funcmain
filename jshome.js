@@ -1,5 +1,3 @@
-
-//Set cgi and delpass parameters for log out.
 var sCgiPath = "dashboard";
 
 var sCopyright = "1995 - 2018"
