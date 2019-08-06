@@ -1,4 +1,3 @@
-<script language="JavaScript">
 
 //Set cgi and delpass parameters for log out.
 var sCgiPath = "dashboard";
@@ -107,5 +106,3 @@ if (! bWebAccess)   // User is not allowed any web access
     frTabs.document.frmLoadFrame.submit();
 
 }
-
-</script>
