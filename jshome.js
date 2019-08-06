@@ -85,7 +85,7 @@ if (! bWebAccess)   // User is not allowed any web access
   window.close();
   }
 
-    frBodyContainer.document.frmLoadFrame.action = "dashboard";
+    frBodyContainer.document.frmLoadFrame.action = "http://127.0.0.1:3000/";
     frBodyContainer.document.frmLoadFrame.method = sDefaultMethod;
     frBodyContainer.document.frmLoadFrame.target = "frBodyContainer";
     frBodyContainer.document.frmLoadFrame.SCRIPT.value = "SD2WORKSBODYFRAMES";
