@@ -30,7 +30,8 @@ with (thisFrame.document)
 
 //////////////////////////////////////////////////////////////////
 function CallScript (sScript, sMessage, sTarget, sForm)
-{		 
+{	
+	console.log('fired callScript);
 	var oForm;
 	var sControlHTML;
 	if (typeof(sMessage) == "undefined" || sMessage == "")
@@ -58,7 +59,6 @@ function CallScript (sScript, sMessage, sTarget, sForm)
 	else
 	{
 		oForm = document[sForm];
-		console.log('callscript: ', oform, sform);
 		if (typeof(oForm.REPORT) != "undefined")
 		{
 			oForm.REPORT.value = "";
